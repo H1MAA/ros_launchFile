@@ -1,0 +1,8 @@
+<launch>
+    <node name="publisher" pkg="imu-rqt" type="imu_yaw.ino"/>
+    <node
+        name="imu_plot"
+        pkg="rqt_plot"
+        type="rqt_plot"
+        args="/joint_states/position[0] /joint_states/position[1]" />
+</launch>
